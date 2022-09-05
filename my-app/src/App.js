@@ -15,7 +15,7 @@ import React from 'react';
 function App() {
   //any backend functionality
   let PageNav
-  //if selected button's pathname is any of these the page will switch
+  //TODO: add a routing feature to change from each of these different pages 
   switch (window.location.pathname) {
     case "/Home":
       PageNav = Home

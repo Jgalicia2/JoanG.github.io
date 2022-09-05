@@ -16,6 +16,8 @@ function App() {
   //any backend functionality
   let PageNav
   //TODO: add a routing feature to change from each of these different pages 
+  //check out the following video TimeStamp: 12:32
+  //https://www.google.com/search?q=add+nav+link+to+react&oq=add+nav+link+to+react&aqs=chrome..69i57j33i160l4j33i22i29i30l5.7082j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_fB8WY6CgCfGfqtsPzO-FwAk_29
   switch (window.location.pathname) {
     case "/Home":
       PageNav = Home

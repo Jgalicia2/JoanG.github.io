@@ -1,44 +1,93 @@
+/* Any commented lines of code is a work in progress
+Remove at own discretion */
 .header-row {
-  border-style: dashed;
+  /* border-style: dashed; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+/* menu bar */
+.navbar {
+  border-style: solid;
+  background-color: #282c34;
+  overflow: hidden;
+}
+
+.navbar a {
+  /* float: left; */
+  /* border-style: solid; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.col {
+  display: grid;
+
+}
+
+/* end of menu bar - start of app */
 .header-column1 {
   width: 50%;
   height: 50%;
   border-radius: 100%;
+  padding: 1em;
 }
 
 .header-column2 {
   width: 50%;
   height: 50%;
+  padding: 1em;
 }
 
 .About {
-  border-style: solid;
+  background-color: #04AA6D;
+  padding: 1em;
 }
 
 #projects {
-  border-style: solid;
+  /* border-style: solid; */
+  padding: 1em;
+  background-color: #207f43;
+}
+
+h3 {
+  text-align: center;
 }
 
 .project-board {
-  border-style: solid;
-  display: flex;
+  /* border-style: solid; */
+  /* display: flex; */
+
   align-items: center;
   justify-content: space-evenly;
+  padding: 1em;
 }
 
 .project {
-  border-style: groove;
+  /* border-style: groove; */
+  text-align: left;
+  /* flex-direction: row; */
 
 }
 
 .App {
-  border-style: double;
+  /* border-style: double; */
   text-align: center;
   justify-content: space-between;
 }

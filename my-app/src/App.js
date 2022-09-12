@@ -17,6 +17,11 @@ function App() {
   let PageNav
   //if selected button's pathname is any of these the page will switch
   switch (window.location.pathname) {
+
+    //TODO: Fix home and / domain in url when accessing site
+    case "/":
+      PageNav = Home
+      break;
     case "/Home":
       PageNav = Home
       break;

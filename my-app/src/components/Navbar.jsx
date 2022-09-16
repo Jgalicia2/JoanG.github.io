@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 //funciton used to set the location of the pages
 function Navbar() {
     return (
-        //navigation of page defined here 
-        //use is to be found in App.js
         <nav className="navbar">
-            {/* <a href="/" className="site-title">Site Name</a> */}
             <div class="navbar">
                 <div class="col">
                     <Link class="active" to="/Home">Home</Link>

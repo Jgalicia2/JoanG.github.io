@@ -2,7 +2,7 @@
 import './App.css';
 import reportWebVitals from "./reportWebVitals";
 
-// Imports for allm components needed for changing pages 
+// Imports for all components needed for changing pages 
 import { Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";

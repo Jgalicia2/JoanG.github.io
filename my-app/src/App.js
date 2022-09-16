@@ -2,7 +2,8 @@
 import './App.css';
 import reportWebVitals from "./reportWebVitals";
 
-// Imports for allm components needed for changing pages 
+// Imports for all components needed for changing pages 
+import { Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
@@ -14,39 +15,19 @@ import React from 'react';
 
 function App() {
   //any backend functionality
-  let PageNav
-  //if selected button's pathname is any of these the page will switch
-  switch (window.location.pathname) {
-
-    //TODO: Fix home and / domain in url when accessing site
-    case "/":
-      PageNav = Home
-      break;
-    case "/Home":
-      PageNav = Home
-      break;
-    case "/Resume":
-      PageNav = Resume
-      break;
-    case "/Contact":
-      PageNav = Contact
-      break;
-    case "/About":
-      PageNav = About
-      break;
-
-    default:
-      break;
-  }
 
   //Will be displayed on website
   return (
-    //App style for css
+
     <div class="App">
-      {/* Navigation for pages */}
       <Navbar />
-      {/* function defined above which tells what page is to be shown */}
-      <PageNav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Resume" element={<Resume />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+      </Routes>
 
     </div >
 

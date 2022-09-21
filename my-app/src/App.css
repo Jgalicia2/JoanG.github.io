@@ -11,10 +11,17 @@ Remove at own discretion */
 }
 
 /* menu bar */
+/* TODO: Fix the issue with a scalable image profile and navbar */
 .navbar {
   border-style: solid;
+  /* border-color: white; */
   background-color: #282c34;
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  padding-left: 10em;
+  padding-right: 10em;
+
 }
 
 .navbar a {

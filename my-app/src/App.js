@@ -6,9 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Resume from "./components/Resume";
+// import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import About from "./components/About";
+
 
 //gutters horizontal and vertical 
 import React from 'react';
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/Resume" element={<Resume />} />
+        {/* <Route path="/Resume" element={<Resume />} /> */}
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
       </Routes>
